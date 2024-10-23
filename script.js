@@ -28,13 +28,65 @@ export function aufgabe01(args) {
     // `currentElement`, damit es explizit ist womit wir arbeiten, aber auch
     // damit wir nicht so viele Klammern schreiben müssen.
     const currentElement = input[i]
+    if (currentElement === "e") {
+      // do nothing
+    } else if (currentElement === "E") {
+      // auch E ignorieren
+    } else {
+      result.push(currentElement)
+    }
 
-    // Hier wird das aktuelle Zeichen ans Ende der Resultat-Liste angehängt.
-    result.push(currentElement)
+    // Hier wird das aktuelle Zeichen ans Ende der Resultat-Liste angehängt}
   }
-
   // Hier geben wir das Resultat zurück, und machen einen Text daraus.
   return result.join("")
 }
 
 linkupExerciseHandler("[data-click=aufgabe01]", aufgabe01)
+
+export function aufgabe02(args) {
+  const input = args
+  const result = []
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    const upperCase = currentElement.toUpperCase()
+    result.push(upperCase)
+  }
+  return result.join("")
+}
+
+linkupExerciseHandler("[data-click=aufgabe02]", aufgabe02)
+export function aufgabe03(args) {
+  const input = args
+  const result = []
+
+  let count = 0
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    if (currentElement === "e") {
+      count = count + 1
+    } else if (currentElement === "E") {
+      count = count + 1
+    }
+  }
+  return count
+}
+linkupExerciseHandler("[data-click=aufgabe03]", aufgabe03)
+
+export function aufgabe05(args) {
+  const input = args
+  const result = []
+
+  let hasUpperCaseLetter = false
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    const upperCaseLetter = currentElement.toUpperCase()
+    if (currentElement === " ") {
+    } else if (currentElement === ".") {
+    } else if (currentElement === upperCaseLetter) {
+      hasUpperCaseLetter = true
+    }
+  }
+  return hasUpperCaseLetter
+}
