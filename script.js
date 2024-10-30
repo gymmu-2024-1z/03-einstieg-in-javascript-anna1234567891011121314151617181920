@@ -111,3 +111,25 @@ export function aufgabe06(args) {
   return istSonderzeichen
 }
 linkupExerciseHandler("[data-click=aufgabe06]", aufgabe06)
+
+export function aufgabe07(args) {
+  const input = args
+  const result = []
+
+  let istund = false
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    if (currentElement === "u" || currentElement === "U") {
+      const nextElement = input[i + 1]
+      if (nextElement === "n") {
+        const lastElement = input[i + 2]
+        if (lastElement === "d") {
+          istund = true
+        }
+      }
+    }
+  }
+  return istund
+}
+linkupExerciseHandler("[data-click=aufgabe07]", aufgabe07)
