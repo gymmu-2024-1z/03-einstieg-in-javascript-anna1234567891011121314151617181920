@@ -90,3 +90,24 @@ export function aufgabe05(args) {
   }
   return hasUpperCaseLetter
 }
+linkupExerciseHandler("[data-click=aufgabe05]", aufgabe05)
+
+export function aufgabe06(args) {
+  const input = args
+  const result = []
+
+  let istSonderzeichen = false
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    const upperCaseLetter = currentElement.toUpperCase()
+
+    const lowerCase = currentElement.toLowerCase()
+
+    if (lowerCase === upperCaseLetter) {
+      istSonderzeichen = true
+    }
+  }
+  return istSonderzeichen
+}
+linkupExerciseHandler("[data-click=aufgabe06]", aufgabe06)
