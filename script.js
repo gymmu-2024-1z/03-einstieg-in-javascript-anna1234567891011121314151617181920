@@ -199,3 +199,20 @@ export function aufgabe12(args) {
   return -1
 }
 linkupExerciseHandler("[data-click=aufgabe12]", aufgabe12)
+
+export function aufgabe13(args) {
+  const input = args
+  const result = []
+  // Erstelle eine variable für die position des letzten es
+  let ePosition = -1
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    if (currentElement === "e" || currentElement === "E") {
+      // Spiechere die position
+      ePosition = i
+    }
+  }
+  return ePosition
+}
+linkupExerciseHandler("[data-click=aufgabe13]", aufgabe13)
