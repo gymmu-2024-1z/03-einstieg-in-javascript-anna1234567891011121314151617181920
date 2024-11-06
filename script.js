@@ -183,3 +183,19 @@ linkupExerciseHandler("[data-click=aufgabe10]", aufgabe10)
 
 export function aufgabe12(args) {
   const input = args
+  const result = []
+
+  // Erstelle eine variable für die position des ersten es
+  let ePosition = -1
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    if (currentElement === "e" || currentElement === "E") {
+      // Spiechere die position
+      ePosition = i
+      return ePosition
+    }
+  }
+  return -1
+}
+linkupExerciseHandler("[data-click=aufgabe12]", aufgabe12)
