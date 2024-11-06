@@ -133,3 +133,22 @@ export function aufgabe07(args) {
   return istund
 }
 linkupExerciseHandler("[data-click=aufgabe07]", aufgabe07)
+
+export function aufgabe08(args) {
+  const input = args
+  const result = []
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    // Wenn du ein e entdeckst, dann schreib eine 3
+    if (currentElement === "e" || currentElement === "E") {
+      result.push("3")
+    } else {
+      result.push(currentElement)
+    }
+  }
+
+  // schreibe eine funktion, die alle e's in input ersetzt durch 3
+  return result.join("")
+}
+linkupExerciseHandler("[data-click=aufgabe08]", aufgabe08)
