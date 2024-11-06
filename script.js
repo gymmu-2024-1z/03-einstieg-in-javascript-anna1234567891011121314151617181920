@@ -152,3 +152,16 @@ export function aufgabe08(args) {
   return result.join("")
 }
 linkupExerciseHandler("[data-click=aufgabe08]", aufgabe08)
+
+export function aufgabe09(args) {
+  const input = args
+  const result = []
+
+  // Wenn input genau sechs Zeichen lang ist gebe wahr zurück, sonst falsch
+  if (input.length === 6) {
+    return true
+  } else {
+    return false
+  }
+}
+linkupExerciseHandler("[data-click=aufgabe09]", aufgabe09)
