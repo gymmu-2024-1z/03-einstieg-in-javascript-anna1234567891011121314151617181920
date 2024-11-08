@@ -33,10 +33,9 @@ export function aufgabe01(args) {
     } else if (currentElement === "E") {
       // auch E ignorieren
     } else {
+      // Hier wird das aktuelle Zeichen ans Ende der Resultat-Liste angehängt}
       result.push(currentElement)
     }
-
-    // Hier wird das aktuelle Zeichen ans Ende der Resultat-Liste angehängt}
   }
   // Hier geben wir das Resultat zurück, und machen einen Text daraus.
   return result.join("")
@@ -234,3 +233,20 @@ export function aufgabe14(args) {
   return -1
 }
 linkupExerciseHandler("[data-click=aufgabe14]", aufgabe14)
+
+export function aufgabe15(args) {
+  const input = args
+  const result = []
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    // Wenn du ein leerzeichen findest, dann gebe result zurück
+    if (currentElement === " ") {
+      return result.join("")
+    }
+    // Hänge das aktuelle zeichen ans resultat an
+    result.push(currentElement)
+  }
+  return result.join("")
+}
+linkupExerciseHandler("[data-click=aufgabe15]", aufgabe15)
