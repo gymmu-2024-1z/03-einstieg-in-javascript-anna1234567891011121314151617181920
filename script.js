@@ -250,3 +250,31 @@ export function aufgabe15(args) {
   return result.join("")
 }
 linkupExerciseHandler("[data-click=aufgabe15]", aufgabe15)
+
+export function aufgabe16(args) {
+  const input = args
+  const result = []
+
+  const result1 = []
+  const result2 = []
+
+  let dollarfound = false
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    // wenn du ein dollar findest
+    if (currentElement === "$") {
+      dollarfound = true
+    }
+    // wenn dollar falsch ist, dann hänge currentElement an result1 an
+    if (dollarfound === false) {
+      result1.push(currentElement)
+    }
+    // wenn dollar wahr ist, dann hange currentElement an result2 an
+    if (dollarfound === true) {
+      result2.push(currentElement)
+    }
+  }
+  return [result1.join(""), result2.join("")]
+}
+linkupExerciseHandler("[data-click=aufgabe16]", aufgabe16)
