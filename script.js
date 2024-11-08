@@ -216,3 +216,21 @@ export function aufgabe13(args) {
   return ePosition
 }
 linkupExerciseHandler("[data-click=aufgabe13]", aufgabe13)
+
+export function aufgabe14(args) {
+  const input = args
+  const result = []
+  let count = 0
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    if (currentElement === "e" || currentElement === "E") {
+      count = count + 1
+      // Wenn count genau 3 ist, dann speichere die position
+      if (count === 3) {
+        return i
+      }
+    }
+  }
+  return -1
+}
+linkupExerciseHandler("[data-click=aufgabe14]", aufgabe14)
