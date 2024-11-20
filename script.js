@@ -280,3 +280,19 @@ export function aufgabe16(args) {
 linkupExerciseHandler("[data-click=aufgabe16]", aufgabe16)
 
 export function aufgabe18(args) {
+  const input = args
+  const result = []
+
+  for (let i = 0; i < input.length; i++) {
+    //wenn du das wort name findest
+    if (input[i] === "name") {
+      //dann ersetzte es mit dem Namen Anna
+      return "Anna"
+    }
+    if (input[i] === "Alter") {
+      //dann ersetzte es mit der Zahl 16
+      return "16"
+    }
+  }
+}
+linkupExerciseHandler("[data-click=aufgabe18]", aufgabe18)
