@@ -311,3 +311,25 @@ export function aufgabe19(args) {
   return result.join("")
 }
 linkupExerciseHandler("[data-click=aufgabe19]", aufgabe19)
+
+export function aufgabe20(args) {
+  const input = args
+  const result = []
+
+  for (let i = 0; i < input.length; i++) {
+    //wenn du ein Punkt findest
+    const currentElement = input[i]
+    if (currentElement === ".") {
+      //dann teste ob du ein Lehrschlag dahinter findest
+      const nextElement = input[i + 1] //wenn du ein Lehrschlag findest
+      if (nextElement === " ") {
+        //dann gebe true zurueck
+      } else {
+        //wenn nicht gebe false zurueck}
+        return false
+      }
+    }
+  }
+  return true
+}
+linkupExerciseHandler("[data-click=aufgabe20]", aufgabe20)
