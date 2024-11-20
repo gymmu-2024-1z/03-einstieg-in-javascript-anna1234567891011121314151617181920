@@ -296,3 +296,18 @@ export function aufgabe18(args) {
   }
 }
 linkupExerciseHandler("[data-click=aufgabe18]", aufgabe18)
+
+export function aufgabe19(args) {
+  const input = args
+  const result = []
+  //wenn due ein Zeichen findest
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    //wenn du ein Buchstaben findest
+    if (currentElement >= "a" && currentElement <= "z") {
+    } //dann  verdopple es
+    result.push(currentElement + currentElement)
+  }
+  return result.join("")
+}
+linkupExerciseHandler("[data-click=aufgabe19]", aufgabe19)
