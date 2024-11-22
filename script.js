@@ -372,3 +372,21 @@ export function aufgabe22(args) {
 }
 
 linkupExerciseHandler("[data-click=aufgabe22]", aufgabe22)
+
+export function aufgabe23(args) {
+  const input = args
+  const result = []
+  //speichere das erste zeichen
+  const firstElement = input[0]
+  //Hänge das erste Zeichen vor und am Schluss der Ausgabe an
+  result.push(firstElement)
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    //hänge aktuelles Zeichen an
+    result.push(currentElement)
+  }
+  //hange das erste Zeichen an den schluss der Ausgabe
+  result.push(firstElement)
+  return result.join("")
+}
+linkupExerciseHandler("[data-click=aufgabe23]", aufgabe23)
