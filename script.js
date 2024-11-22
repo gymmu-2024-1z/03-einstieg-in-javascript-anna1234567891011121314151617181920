@@ -350,13 +350,25 @@ export function aufgabe22(args) {
   const input = args
   const result = []
 
+  //erstelle zwei Listen
+  let kfound = false
+
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
-    if (currentElement === " ") {
-      return result.join("_")
+    // wenn du ein k findest
+    if (kfound === true) {
+      result.push(currentElement)
     }
-    result.push(currentElement)
+    // wenn k falsch ist, dann hänge currentElement an result1 an
+    if (kfound === false) {
+      result.push("_")
+    }
+    // wenn k wahr ist, dann hange currentElement an result2 an
+    if (currentElement === "k") {
+      kfound = true
+    }
   }
   return result.join("")
 }
+
 linkupExerciseHandler("[data-click=aufgabe22]", aufgabe22)
