@@ -415,3 +415,47 @@ export function aufgabe26(args) {
   return result.join("")
 }
 linkupExerciseHandler("[data-click=aufgabe26]", aufgabe26)
+
+export function aufgabe24(args) {
+  const input = args
+  const result = []
+
+  const firstElement = input[0]
+  const lastElement = input[input.length - 1]
+
+  if (firstElement.charCodeAt(0) > lastElement.charCodeAt(0)) {
+  } else {
+    result.push(firstElement)
+    result.push(lastElement)
+  }
+  for (let i = 1; i < input.length - 1; i++) {
+    const currentElement = input[i]
+    result.push(currentElement)
+  }
+  return result.join("")
+}
+
+linkupExerciseHandler("[data-click=aufgabe24]", aufgabe24)
+
+//24 noch nicht gelöst
+
+export function aufgabe27(args) {
+  const input = args
+  const result = []
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    const ascci = currentElement.charCodeAt(0)
+
+    if (ascci >= 48 && ascci <= 57) {
+      //wir geben den ascii wert von zahlen ein, um diese zu erkennen und darin beim nächsten Schritt als true kennzuzeichnen
+      return true
+      //wenn es eine zahl ist, wird uns true angezeigt
+    } else {
+      return false
+      //wenn nicht falsch
+    }
+  }
+}
+
+linkupExerciseHandler("[data-click=aufgabe27]", aufgabe27)
