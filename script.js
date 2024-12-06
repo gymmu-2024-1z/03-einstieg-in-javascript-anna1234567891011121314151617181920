@@ -411,10 +411,6 @@ export function aufgabe24(args) {
 
 linkupExerciseHandler("[data-click=aufgabe24]", aufgabe24)
 
-//24 noch nicht gelöst
-
-//aufgabe 25
-
 export function aufgabe26(args) {
   const input = args
   const result = []
@@ -461,4 +457,23 @@ export function aufgabe27(args) {
 
 linkupExerciseHandler("[data-click=aufgabe27]", aufgabe27)
 
-//aufgabe 28
+export function franz(args) {
+  const input = args
+  const result = []
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    const ascci = currentElement.charCodeAt(0)
+
+    if (ascci >= 97 && ascci <= 122) {
+      //dann ist es ein Kleinbuchstabe
+      //dann ersetzte ihn mit einem Grundbuchstaben
+      result.push(currentElement.toUpperCase())
+      //wenn nicht dann ist es kein kleinbuchstabe
+    } else {
+      result.push(currentElement)
+    }
+  }
+  return result.join("")
+}
+linkupExerciseHandler("[data-click=franz]", franz)
