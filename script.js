@@ -391,6 +391,30 @@ export function aufgabe23(args) {
 }
 linkupExerciseHandler("[data-click=aufgabe23]", aufgabe23)
 
+export function aufgabe24(args) {
+  const input = args
+  const result = []
+  //speichere das erste und das letzte zeichen der eingabe
+  const firstElement = input[0]
+  const lastElement = input[input.length - 1]
+
+  //hänge das letzte Zeichen ganz an den Anfang der Ausgabe an
+  result.push(lastElement)
+  for (let i = 1; i < input.length - 1; i++) {
+    const currentElement = input[i]
+    result.push(currentElement)
+  }
+  //hänge das erste Zeichen am Schluss der Ausgabe an
+  result.push(firstElement)
+  return result.join("")
+}
+
+linkupExerciseHandler("[data-click=aufgabe24]", aufgabe24)
+
+//24 noch nicht gelöst
+
+//aufgabe 25
+
 export function aufgabe26(args) {
   const input = args
   const result = []
@@ -416,29 +440,6 @@ export function aufgabe26(args) {
 }
 linkupExerciseHandler("[data-click=aufgabe26]", aufgabe26)
 
-export function aufgabe24(args) {
-  const input = args
-  const result = []
-
-  const firstElement = input[0]
-  const lastElement = input[input.length - 1]
-
-  if (firstElement.charCodeAt(0) > lastElement.charCodeAt(0)) {
-  } else {
-    result.push(firstElement)
-    result.push(lastElement)
-  }
-  for (let i = 1; i < input.length - 1; i++) {
-    const currentElement = input[i]
-    result.push(currentElement)
-  }
-  return result.join("")
-}
-
-linkupExerciseHandler("[data-click=aufgabe24]", aufgabe24)
-
-//24 noch nicht gelöst
-
 export function aufgabe27(args) {
   const input = args
   const result = []
@@ -459,3 +460,5 @@ export function aufgabe27(args) {
 }
 
 linkupExerciseHandler("[data-click=aufgabe27]", aufgabe27)
+
+//aufgabe 28
