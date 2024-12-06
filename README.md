@@ -69,7 +69,8 @@ Teste ob eine Eingabe genau sechs Zeichen lang ist.
 
 ## Aufgabe 10
 
-Teste ob eine Eingabe ein korrekter RGB Hexcode ist.
+Teste ob eine Eingabe ein korrekter RGB Hexcode ist. #FF00A0
+Alphabet:0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f
 
 ## Aufgabe 11
 
@@ -150,3 +151,13 @@ Testen sie, ob eine Eingabe eine Zahl ist.
 
 Testen Sie, ob in der Eingabe 2 Zahlen von einem Leerzeichen getrennt sind.
 Falls ja geben Sie die Summe als Ausgabe aus; sonst Fehlermeldung.
+
+## Franz
+
+Franz möchte alle Kleinbuchstaben durch Grossbuchstaben ersetzen, helfen Sie
+ihm.
+
+## Fritzli
+
+Fritzli's Lieblingstiere sind Enten. Er muss den Buchstaben T durch sein
+Lieblingstier ersetzen, helfen Sie ihm.

@@ -477,3 +477,20 @@ export function franz(args) {
   return result.join("")
 }
 linkupExerciseHandler("[data-click=franz]", franz)
+
+export function fritzli(args) {
+  const input = args
+  const result = []
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    if (currentElement === "T") {
+      //dann ersetze es mit dem Wort "Ente"
+      result.push("Ente")
+    } else {
+      result.push(currentElement)
+    }
+  }
+  return result.join("")
+}
+linkupExerciseHandler("[data-click=fritzli]", fritzli)
