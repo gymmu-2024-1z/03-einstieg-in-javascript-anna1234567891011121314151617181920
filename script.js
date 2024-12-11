@@ -494,3 +494,27 @@ export function fritzli(args) {
   return result.join("")
 }
 linkupExerciseHandler("[data-click=fritzli]", fritzli)
+
+export function henriette(args) {
+  const input = args
+  const result = []
+
+  let isthenri = false
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    if (currentElement === "h" || currentElement === "H") {
+      if (input[i + 1] === "e") {
+        if (input[i + 2] === "n") {
+          if (input[i + 3] === "r") {
+            if (input[i + 4] === "i") {
+              isthenri = true
+            }
+          }
+        }
+      }
+    }
+  }
+  return isthenri
+}
+linkupExerciseHandler("[data-click=henriette]", henriette)

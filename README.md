@@ -161,3 +161,8 @@ ihm.
 
 Fritzli's Lieblingstiere sind Enten. Er muss den Buchstaben T durch sein
 Lieblingstier ersetzen, helfen Sie ihm.
+
+## Henriette
+
+Henriette stalkt wieder einmal ihren Ehemann Henri, sie will testen, ob sein
+name in der Eingabe enthalten ist. Helfen Sie ihr.
