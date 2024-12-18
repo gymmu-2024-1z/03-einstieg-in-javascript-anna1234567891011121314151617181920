@@ -179,3 +179,5 @@ Eingabe verglichen. Das geht immer so weiter bis es keine grössere Zahl mehr ha
 als die ehemalige erste Eingabe, dann geht es mit der zweiten Eingabe weiter. Es
 heisst "Bubblesort", weil es von oben nach unten sortiert wird und die Eingaben
 aufsteigen und Seifenblasen auch aufsteigen.
+
+Angefangen
