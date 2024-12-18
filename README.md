@@ -180,4 +180,14 @@ als die ehemalige erste Eingabe, dann geht es mit der zweiten Eingabe weiter. Es
 heisst "Bubblesort", weil es von oben nach unten sortiert wird und die Eingaben
 aufsteigen und Seifenblasen auch aufsteigen.
 
+## Selection Sort
+
+Aufgabe: Sortiere die Zahlen nach der Grösse, die kleinsten links und die
+grössten rechts. Wie funktioniert es? Zuerst wird die kleinste Element gesucht
+und mit dem Element an der ersten Stelle der Eingabe vertauscht. Als nächstes
+wird das zweit kleinste Element gesucht und mit dem Element an der zweiten
+Stelle getauscht. Dies geht jetzt immer so weiter bis zum grössten Element. Wenn
+ein Element breits an der richtigen Stelle steht wird dieser Schritt
+übersprungen und so lange weiter gemacht, bis die Liste fertig sortiert ist.
+
 Angefangen
