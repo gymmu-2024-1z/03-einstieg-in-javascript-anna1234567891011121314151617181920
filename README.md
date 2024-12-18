@@ -201,4 +201,4 @@ richtige Stelle gesetzt. deshalb heisst es "Sortieren durch Einfügen". Die
 eingefügten Wert richtig verschoben werden. Dies wird so lange gemacht bis alle
 Werte sortiert sind.
 
-Angefangen
+Angefangen fertig gearbeitet
