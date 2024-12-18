@@ -190,4 +190,15 @@ Stelle getauscht. Dies geht jetzt immer so weiter bis zum grössten Element. Wen
 ein Element breits an der richtigen Stelle steht wird dieser Schritt
 übersprungen und so lange weiter gemacht, bis die Liste fertig sortiert ist.
 
+## Insertion Sort
+
+(auch Einfügesortierenmethode, Insertsort) insertion= Einfügen sort= sortieren
+Aufgabe: Sortiere die Zahlen nach der Grösse, die kleinsten links und die
+grössten rechts. Wie funktioniert es? Zuerst wird Schritt für Schritt die
+Eingabe durchlaufen. Die nicht richtig sortierten Eingaben werden an die
+richtige Stelle gesetzt. deshalb heisst es "Sortieren durch Einfügen". Die
+übriggebliebenen Elemente der Eingabe müssen dann hinter dem gerade neu
+eingefügten Wert richtig verschoben werden. Dies wird so lange gemacht bis alle
+Werte sortiert sind.
+
 Angefangen
