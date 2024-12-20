@@ -348,19 +348,19 @@ linkupExerciseHandler("[data-click=aufgabe17]", aufgabe17)
 
 export function aufgabe18(args) {
   const input = args
+  // Aufgabe 17 wird hier verwendet um eine Liste zu bekommen
+  const nameAge = aufgabe17(input)
+  // Es wird hier unsere Aufgabeliste generiert.¨
   const result = []
-
-  for (let i = 0; i < input.length; i++) {
-    //wenn du das wort name findest
-    if (input[i] === "name") {
-      //dann ersetzte es mit dem Namen Anna
-      return "Anna"
-    }
-    if (input[i] === "Alter") {
-      //dann ersetzte es mit der Zahl 16
-      return "16"
-    }
-  }
+  //Hier werden ganze Worte in die Liste geschrieben, das ist auch möglich
+  result.push("Sie heissen")
+  // Die Liste wird so zusamen gesetzt, dass der Name und das Alter an der richtigen Stelle eingefügt werden.
+  result.push(nameAge[0])
+  result.push("und sind")
+  result.push(nameAge[1])
+  result.push("Jahre alt")
+  //das Resultat wird wie immer als Text zurück gegeben
+  return result.join(" ")
 }
 linkupExerciseHandler("[data-click=aufgabe18]", aufgabe18)
 
