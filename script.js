@@ -607,3 +607,37 @@ linkupExerciseHandler(
   "[data-click=bubblesortalgorithmus]",
   bubblesortalgorithmus,
 )
+
+export function selectionSort(args) {
+  const input = args.split("")
+  const result = []
+
+  for (let i = 0; i < input.length; i++) {
+    //suche das kleinste Element in der Eingabe
+    let min = input[i]
+    let minIndex = i
+
+    for (let j = i + 1; j < input.length; j++) {
+      if (input[j] < min) {
+        min = input[j]
+        minIndex = j
+      }
+    }
+    const tmp = input[i]
+    input[i] = min
+    input[minIndex] = tmp
+    //vertausche es mit dem ersten Element der Eingabe
+
+    for (let k = i + 1; k < input.length; k++) {
+      if (input[k] < min) {
+        min = input[k]
+        minIndex = k
+      }
+    }
+
+    result.push(input[i])
+  }
+
+  return result.join("")
+}
+linkupExerciseHandler("[data-click=selectionsort]", selectionSort)
