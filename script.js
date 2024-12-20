@@ -48,6 +48,8 @@ export function aufgabe02(args) {
   const result = []
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
+    //upperCase steht für Großbuchstaben
+    //also speicher ich jetzt einen Grossbuchstaben
     const upperCase = currentElement.toUpperCase()
     result.push(upperCase)
   }
@@ -58,16 +60,18 @@ linkupExerciseHandler("[data-click=aufgabe02]", aufgabe02)
 export function aufgabe03(args) {
   const input = args
   const result = []
-
+  // count steht für einen Zähler und wird hier auf 0 gesetzt
   let count = 0
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
+    // wenn es ein e oder ein E ist, dann erhöhen wir den Zähler
+    // wir müssen das kleine e und das grosse E beachten
     if (currentElement === "e") {
       count = count + 1
     } else if (currentElement === "E") {
       count = count + 1
     }
-  }
+  } //Hier geben wir den Zähler zurück
   return count
 }
 linkupExerciseHandler("[data-click=aufgabe03]", aufgabe03)
@@ -79,12 +83,15 @@ export function aufgabe04(args) {
 
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
+    //ascii steht für American Standart Code und ist dafür da, dass alle Zeichen die es gibt nummeriert sind
     const ascii = currentElement.charCodeAt(0)
-
+    //charCodeAt(0) gibt den Wert von einem Buchstaben an
     if (ascii >= 65 && ascii <= 90) {
+      //das ist z.B der ascii code von A bis Z
       //Großbuchstaben
       result.push(currentElement)
     } else if (ascii >= 97 && ascii <= 122) {
+      //das ist z.B der ascii code von a bis z
       //Kleinbuchstaben
       result.push(currentElement)
     } else if (currentElement === " ") {
@@ -121,6 +128,7 @@ linkupExerciseHandler("[data-click=aufgabe04]", aufgabe04)
 export function aufgabe05(args) {
   const input = args
   const result = []
+  //
 
   let hasUpperCaseLetter = false
 
@@ -567,7 +575,7 @@ export function henriette(args) {
   const result = []
 
   let isthenri = false
-
+  //hier muss jeder Buchstabe einzel getestet werden, ob dieser vorhanden ist und ob diese in der richtigen Reihenfolge vorhanden sind
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
     if (currentElement === "h" || currentElement === "H") {
