@@ -1,3 +1,5 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/SYYUWTQg)
+
 # Einstieg ins Programmieren mit Javascript
 
 Dieses Projekt bietet viele Aufgaben mit automatischen Tests, bei denen Sie das
@@ -67,7 +69,8 @@ Teste ob eine Eingabe genau sechs Zeichen lang ist.
 
 ## Aufgabe 10
 
-Teste ob eine Eingabe ein korrekter RGB Hexcode ist.
+Teste ob eine Eingabe ein korrekter RGB Hexcode ist. #FF00A0
+Alphabet:0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f
 
 ## Aufgabe 11
 
@@ -148,3 +151,54 @@ Testen sie, ob eine Eingabe eine Zahl ist.
 
 Testen Sie, ob in der Eingabe 2 Zahlen von einem Leerzeichen getrennt sind.
 Falls ja geben Sie die Summe als Ausgabe aus; sonst Fehlermeldung.
+
+## Franz
+
+Franz möchte alle Kleinbuchstaben durch Grossbuchstaben ersetzen, helfen Sie
+ihm.
+
+## Fritzli
+
+Fritzli's Lieblingstiere sind Enten. Er muss den Buchstaben T durch sein
+Lieblingstier ersetzen, helfen Sie ihm.
+
+## Henriette
+
+Henriette stalkt wieder einmal ihren Ehemann Henri, sie will testen, ob sein
+name in der Eingabe enthalten ist. Helfen Sie ihr.
+
+## Sortierverfahren
+
+## Der Bubblesort-Algorithmus
+
+Aufgabe: Sortiere die Zahlen nach der Grösse, die kleinsten links und die
+grössten rechts. Wie funktioniert es? (in Worten) Man vergleicht immer zuerst
+die erste Eingabe und die zweite. Die grössere Eingabe steigt auf oder bleibt wo
+sie ist. Dann wird die zweite Eingabe/ehemalige erste Eingabe mit der dritten
+Eingabe verglichen. Das geht immer so weiter bis es keine grössere Zahl mehr hat
+als die ehemalige erste Eingabe, dann geht es mit der zweiten Eingabe weiter. Es
+heisst "Bubblesort", weil es von oben nach unten sortiert wird und die Eingaben
+aufsteigen und Seifenblasen auch aufsteigen.
+
+## Selection Sort
+
+Aufgabe: Sortiere die Zahlen nach der Grösse, die kleinsten links und die
+grössten rechts. Wie funktioniert es? Zuerst wird die kleinste Element gesucht
+und mit dem Element an der ersten Stelle der Eingabe vertauscht. Als nächstes
+wird das zweit kleinste Element gesucht und mit dem Element an der zweiten
+Stelle getauscht. Dies geht jetzt immer so weiter bis zum grössten Element. Wenn
+ein Element breits an der richtigen Stelle steht wird dieser Schritt
+übersprungen und so lange weiter gemacht, bis die Liste fertig sortiert ist.
+
+## Insertion Sort
+
+(auch Einfügesortierenmethode, Insertsort) insertion= Einfügen sort= sortieren
+Aufgabe: Sortiere die Zahlen nach der Grösse, die kleinsten links und die
+grössten rechts. Wie funktioniert es? Zuerst wird Schritt für Schritt die
+Eingabe durchlaufen. Die nicht richtig sortierten Eingaben werden an die
+richtige Stelle gesetzt. deshalb heisst es "Sortieren durch Einfügen". Die
+übriggebliebenen Elemente der Eingabe müssen dann hinter dem gerade neu
+eingefügten Wert richtig verschoben werden. Dies wird so lange gemacht bis alle
+Werte sortiert sind.
+
+Angefangen fertig gearbeitet
